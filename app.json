@@ -1,0 +1,19 @@
+{
+  "expo": {
+    "name": "VYROX",
+    "slug": "vyrox",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "splash": {
+      "resizeMode": "contain",
+      "backgroundColor": "#090B12"
+    },
+    "android": {
+      "package": "com.vyrox.app"
+    },
+    "ios": {
+      "bundleIdentifier": "com.vyrox.app"
+    }
+  }
+}
