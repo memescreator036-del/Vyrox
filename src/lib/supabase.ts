@@ -1,15 +1,13 @@
 
 import { createClient } from "@supabase/supabase-js";
 
-const supabaseUrl = process.env.EXPO_PUBLIC_SUPABASE_URL;
-const supabaseAnonKey = process.env.EXPO_PUBLIC_SUPABASE_ANON_KEY;
+const supabaseUrl =
+  "https://tnfksvklomijbbzdktjg.supabase.co";
 
-if (!supabaseUrl || !supabaseAnonKey) {
-  console.warn("Please configure your Supabase environment variables.");
-}
+const supabaseAnonKey =
+  "PASTE_YOUR_PUBLISHABLE_KEY_HERE";
 
 export const supabase = createClient(
-  supabaseUrl || "https://example.supabase.co",
-  supabaseAnonKey || "missing-key"
+  supabaseUrl,
+  supabaseAnonKey
 );
-
